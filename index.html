@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Ebtisam Dorloh</title>
+    <!-- เชื่อมต่อไฟล์ CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- แถบ Navigation เมนูนำทางด้านบน -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#personal">Personal Info</a></li>
+            <li><a href="#skills">Languages & Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#clock-section">Clock</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="cv-container">
+        <!-- หัวข้อหลัก -->
+        <h1>Curriculum Vitae</h1>
+
+        <!-- ส่วน Personal Information -->
+        <section id="personal">
+            <h2>Personal Information</h2>
+            <p><strong>Name:</strong> Ebtisam Dorloh</p>
+            <p><strong>Major:</strong> Information Technology</p>
+        </section>
+
+        <!-- ส่วน Languages และ Programming Languages -->
+        <section id="skills">
+            <h2>Languages</h2>
+            <ul>
+                <li>Thai</li>
+                <li>English</li>
+            </ul>
+
+            <h2>Programming Languages</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+
+        <!-- ส่วน Projects -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>Network Comparison</li>
+                <li>Healthcare IT Infrastructure</li>
+                <li>Personal Website</li>
+            </ul>
+        </section>
+
+        <!-- ส่วน Activities -->
+        <section id="activities">
+            <h2>Activities</h2>
+            <ul>
+                <li>Pikul Game</li>
+                <li>IT Workshop</li>
+            </ul>
+        </section>
+
+        <!-- ส่วนแสดงเวลา (สำหรับ Workshop 8 - Fetch API) -->
+        <section id="clock-section">
+            <h2>Current Time</h2>
+            <p id="clock">Loading time...</p>
+        </section>
+
+        <!-- ส่วนฟอร์มติดต่อ (สำหรับ Workshop 7) -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required pattern="[A-Za-z\s]+" title="Letters only">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- เชื่อมต่อไฟล์ JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
